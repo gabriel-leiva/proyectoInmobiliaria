@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Titulo-->
+    <title>Del Sur Propiedades</title>
+
+    <!--Fuentes para los textos Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!--Hoja de estilo-->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!--Icono para la pestaña del navegador-->
+    <link rel="icon" href="./img/logo-chico.ico">
+</head>
+
+<body>
+    <header class="site-header inicio">
+        <!--Contiene el logo, barra de navegacion y heading principal-->
+        <div class="contenedor contenido-header">
+
+            <!--Contiene el logo y la barra de navegacion-->
+            <div class="barra">
+                <!--Logotipo-->
+                <a href="index.html">
+                    <img src="./img/logo.png" alt="logotipo de la empresa" class="logo">
+                </a>
+                <!--Barra de navegacion-->
+                <nav class="navegacion">
+                    <a href="index.html">Inicio</a>
+                    <a href="./pages/nosotros.html">Nosotros</a>
+                    <a href="./pages/inmuebles.html">Inmuebles</a>
+                    <a href="./pages/contacto.html">Contacto</a>
+                </nav>
+            </div>
+
+            <!--Heading principal-->
+            <h1>Venta de casas y deptos</h1>
+        </div>
+    </header>
+
+    <!--Seccion Mas sobre nosotros-->
+    <section class="contenedor seccion">
+
+        <!--Heading H2 Mas sobre Nosotros-->
+        <h2 class="fw-300 centrar-texto">Más sobre nosotros</h2>
+
+        <!--Contiene los tres iconos mas los textos-->
+        <div class="iconos-nosotros">
+
+            <!--Contiene icono, titulo y texto-->
+            <div class="icono">
+                <img src="./img/seguridad.png" alt="Candado de seguridad">
+                <h3>Seguridad</h3>
+                <p>Tu tranquilidad es nuestra prioridad. Nos aseguramos de que cada operación inmobiliaria esté respaldada legalmente y se realice con absoluta transparencia, cuidando cada detalle para que compres con total confianza.</p>
+            </div> 
+            <!--Contiene icono, titulo y texto-->
+            <div class="icono">
+                <img src="./img/dinero.png" alt="Dinero">
+                <h3>El mejor precio</h3>
+                <p>Gracias a nuestra amplia red y experiencia en el mercado, ofrecemos propiedades con una excelente relación calidad-precio. Negociamos siempre en beneficio de nuestros clientes para que obtengan el mayor valor por su inversión.</p>
+            </div>
+            <!--Contiene icono, titulo y texto-->
+            <div class="icono">
+                <img src="./img/tiempo.png" alt="Reloj">
+                <h3>A tiempo</h3>
+                <p>Sabemos que tu tiempo vale. Por eso, trabajamos con eficiencia y compromiso para que cada operación se concrete en los plazos acordados, sin demoras ni complicaciones innecesarias.</p>
+            </div>  
+
+        </div> 
+
+    </section>
+    
+    <!--Seccion Principal-->
+    <main class="seccion contenedor">
+
+        <!--Heading H2-->
+        <h2 class="fw-300 centrar-texto">Casas y departamentos en venta</h2>
+
+        <!--Contiene los tres anuncios a mostrar-->
+        <div class="contenedor-anuncios">
+
+            <!--Contiene el primer anuncio-->
+            <div class="anuncio">
+                <!--Imagen de la propiedad-->
+                <img src="./img/casa-2-ambientes.jpg" alt="Casa de 2 ambientes">
+                <!--Contiene el titulo, la descripcion, el precio, los iconos y boton "Ver Propiedad"-->
+                <div class="contenido-anuncio">
+                    <!--Titulo-->
+                    <h3>Casa 2 Ambientes</h3>
+                    <!--Descripcion-->
+                    <p>Ideal para quienes buscan su primer hogar: cómoda, funcional y lista para mudarse.</p>
+                    <!--Precio-->
+                    <p class="precio">U$D 100.000</p>
+                    <!--Lista para mostrar los tres iconos y sus cantidades: sanitario, habitacion y cochera-->
+                    <ul class="iconos-caracteristicas">
+                        <li>
+                            <img src="./img/icono-bano.png" alt="Icono de sanitario">
+                            <p>1</p>
+                        </li>
+                        <li>
+                            <img src="./img/icono-habitacion.png" alt="Icono habitacion">
+                            <p>1</p>
+                        </li>
+                        <li>
+                            <img src="./img/icono-coche.png" alt="Icono cochera">
+                            <p>0</p>
+                        </li>
+                    </ul>
+                    <!--Boton "Ver Propiedad". En este caso redirige a la pagina "propiedad" para ver mas detalles del inmueble. Para este trabajo, con el fin de no generar mas paginas de lo que pedia la consigna solo este boton funciona, de los siguientes anuncios se coloco "#"-->
+                    <a href="./pages/propiedad.html" class="boton boton-naranja">Ver Propiedad</a>
+                </div>
+            </div>
+
+            <!--Contiene el segundo anuncio-->
+            <div class="anuncio">
+                <!--Imagen de la propiedad-->
+                <img src="./img/depto-3-ambientes.jpg" alt="Casa de 3 ambientes">
+                <!--Contiene el titulo, la descripcion, el precio, los iconos y boton "Ver Propiedad"-->
+                <div class="contenido-anuncio">
+                    <!--Titulo-->
+                    <h3>Depto 3 Ambientes</h3>
+                    <!--Descripcion-->
+                    <p>Espacios bien distribuidos, perfecta para una familia pequeña que valora el confort diario.</p>
+                    <!--Precio-->
+                    <p class="precio">U$D 200.000</p>
+                    <!--Lista para mostrar los tres iconos y sus cantidades: sanitario, habitacion y cochera-->
+                    <ul class="iconos-caracteristicas">
+                        <li>
+                            <img src="./img/icono-bano.png" alt="Icono de sanitario">
+                            <p>2</p>
+                        </li>
+                        <li>
+                            <img src="./img/icono-habitacion.png" alt="Icono habitacion">
+                            <p>2</p>
+                        </li>
+                        <li>
+                            <img src="./img/icono-coche.png" alt="Icono cochera">
+                            <p>1</p>
+                        </li>
+                    </ul>
+                    <!--Boton "Ver Propiedad"-->
+                    <a href="#" class="boton boton-naranja">Ver Propiedad</a>
+                </div>
+            </div>
+
+            <!--Contiene el tercer anuncio-->
+            <div class="anuncio">
+                <!--Imagen de la propiedad-->
+                <img src="./img/casa-4-ambientes.jpg" alt="Casa de 4 ambientes">
+                <!--Contiene el titulo, la descripcion, el precio, los iconos y boton "Ver Propiedad"-->
+                <div class="contenido-anuncio">
+                    <!--Titulo-->
+                    <h3>Casa 4 Ambientes</h3>
+                    <!--Descripcion-->
+                    <p>Amplia y luminosa, pensada para quienes necesitan más espacio sin resignar calidez.</p>
+                    <!--Precio-->
+                    <p class="precio">U$D 250.000</p>
+                    <!--Lista para mostrar los tres iconos y sus cantidades: sanitario, habitacion y cochera-->
+                    <ul class="iconos-caracteristicas">
+                        <li>
+                            <img src="./img/icono-bano.png" alt="Icono de sanitario">
+                            <p>2</p>
+                        </li>
+                        <li>
+                            <img src="./img/icono-habitacion.png" alt="Icono habitacion">
+                            <p>3</p>
+                        </li>
+                        <li>
+                            <img src="./img/icono-coche.png" alt="Icono cochera">
+                            <p>2</p>
+                        </li>
+                    </ul>
+                    <!--Boton "Ver Propiedad"-->
+                    <a href="#" class="boton boton-naranja">Ver Propiedad</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Boton para ver todas las propiedades, redirige a "inmuebles"-->
+        <div class="ver-propiedades">
+            <a href="./pages/inmuebles.html" class="boton boton-verde">Ver Todas</a>
+        </div>
+
+    </main><!--Termina seccion principal-->
+
+    <!--Seccion Contactanos-->
+    <section class="contacto-home">
+        <!--Contiene el titulo, la descripcion y el boton "Contactanos"-->
+        <div class="contenedor contenido-contacto">
+            <!--Titulo-->
+            <h2>Encuentra la casa de tus sueños</h2>
+            <!--Descripcion-->
+            <p>Explorá nuestras propiedades y encontrá el hogar perfecto para vos.</p>
+            <!--Boton "Contactanos"-->
+            <a href="./pages/contacto.html" class="boton boton-naranja boton-contacto">Contáctanos</a>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer class="site-footer seccion">
+        <!--Contiene los logos de las redes sociales con sus respectivos links y el parrafo de Copyright-->
+        <div class="contenedor contenedor-footer">
+            <!--Contiene los logos de las redes sociales y sus respectivos links-->
+            <div class="iconos-footer">
+                <!--Logo y link de Intagram-->
+                <a href="https://www.instagram.com/" target="_blank"><img src="./img/icono-instagram.png" alt="logo instagram"></a>
+                <!--Logo y link de Facebook-->
+                <a href="https://www.facebook.com/" target="_blank"><img src="./img/icono-facebook.png" alt="logo facebook"></a>
+                <!--Logo y link de X-->
+                <a href="https://x.com/" target="_blank"><img src="./img/icono-x.png" alt="logo x"></a>
+            </div>
+            <!--Copyright-->
+            <p class="copyright">Todos los derechos reservados &copy;</p>
+        </div>
+    </footer>
+
+</body>
+</html>
