@@ -1,0 +1,15 @@
+/* Reseteo*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /*reseteo para rem*/
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}

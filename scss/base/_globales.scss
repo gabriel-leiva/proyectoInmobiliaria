@@ -1,0 +1,23 @@
+/* --- Globales ---*/
+
+body{
+    font-family: $font_family;
+    line-height: 2;
+    @include font_size(body);
+}
+
+img{
+    max-width: 100%;
+}
+
+h1{
+    @include font_size(h1);
+}
+
+h2{
+    @include font_size(h1);
+}
+
+h3{
+    @include font_size(h3);
+}

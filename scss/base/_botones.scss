@@ -1,0 +1,16 @@
+/*Botones*/
+
+.boton{
+    @extend %boton-base;
+    :hover{
+        cursor: pointer;
+    } 
+}
+
+.boton-naranja{
+    @include boton($colorNaranja, $colorNaranjaClaro);
+}
+
+.boton-verde{
+    @include boton($colorVerde, $colorVerdeClaro);
+}

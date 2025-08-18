@@ -1,0 +1,38 @@
+%flex-evenly{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+%flex-end{
+    display: flex;
+    justify-content: end;
+}
+
+%flex-align-items{
+    display: flex;
+    align-items: center;
+}
+
+%evenly-align-items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+%between-align-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%boton-base{
+    @include font-size(boton);
+    color: $colorBlanco;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 3rem;
+    padding: 1rem 3rem;
+    display: inline-block;
+    border: none;
+    display: block
+}

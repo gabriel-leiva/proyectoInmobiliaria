@@ -1,0 +1,21 @@
+@mixin font-size($key){
+    font-size: map-get($map: $font_sizes, $key: $key);
+}
+
+@mixin boton($bg-color, $hover-color){
+    background-color: $bg-color;
+
+    &:hover{
+        background-color: $hover-color;
+    }
+}
+
+@mixin img-cover($img){
+    background-image: url($img);
+    background-position: center center;
+    background-size: cover;
+}
+
+@mixin border($width, $style, $color){
+    border: $width $style $color;
+}

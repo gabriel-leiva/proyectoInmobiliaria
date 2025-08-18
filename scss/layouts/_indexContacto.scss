@@ -1,0 +1,22 @@
+/*Seccion "Contactanos" en index*/
+
+.contacto-home{
+    @include img-cover('../img/fondo-contacto-home.jpg');
+    height: 40rem;
+    @extend %flex-align-items;
+}
+
+.contenido-contacto{
+    flex: 0 0 95%;
+    color: $colorBlanco;
+    
+    p{
+        @include font_size(contenido-contacto-p);
+    }
+}
+
+.boton-contacto{
+    display: inline-block;
+    padding: 1rem 2rem;
+    
+}

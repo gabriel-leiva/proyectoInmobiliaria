@@ -1,0 +1,48 @@
+/*Anuncios de los inmuebles*/
+
+.anuncio{  
+    @include border(1px, solid, $colorGrisClaro);
+    background-color: $colorBlanco;
+    margin-bottom: 2rem;
+}
+
+.contenido-anuncio{
+    padding: 2rem;
+
+    h3{
+        margin: 0;
+        @include font_size(contenido-anuncio-h3);
+    }
+
+    p{
+        margin: 0;
+        @include font_size(contenido-anuncio-p);
+    }
+}
+
+.precio{
+    color: $colorVerde;
+    font-weight: 900;
+    @include font_size(precio);
+}
+
+.iconos-caracteristicas{
+    margin-top: 1rem;
+    list-style: none;
+    padding: 0;
+    @extend %flex-evenly;
+    flex: 1;
+    max-width: 500px;
+
+    li{
+        display: flex;
+        img{
+            width: 3.5rem;
+            margin-right: 2rem;
+        }
+    }    
+}
+
+.ver-propiedades{
+    display: block;    
+}

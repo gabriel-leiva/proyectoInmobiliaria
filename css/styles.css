@@ -1,373 +1,322 @@
+.iconos-caracteristicas {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contenido-header {
+  display: flex;
+  justify-content: end;
+}
+
+.contacto-home {
+  display: flex;
+  align-items: center;
+}
+
+.iconos-footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.resumen-propiedad {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.boton {
+  font-size: 1.8rem;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 3rem;
+  padding: 1rem 3rem;
+  display: inline-block;
+  border: none;
+  display: block;
+}
+
 /* Reseteo*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    box-sizing: border-box;
-    font-size: 62.5%; /*reseteo para rem*/
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /*reseteo para rem*/
 }
 
-*, *::before, *::after{
-    box-sizing: inherit;
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 /* --- Globales ---*/
-
-body{
-    font-family: 'Lato', sans-serif;
-    line-height: 2;
-    font-size: 1.6rem;
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 2;
+  font-size: 1.6rem;
 }
 
-img{
-    max-width: 100%;
+img {
+  max-width: 100%;
 }
 
-h1{
-    font-size: 3rem;
+h1 {
+  font-size: 3rem;
 }
 
-h2{
-    font-size: 3rem;
+h2 {
+  font-size: 3rem;
 }
 
-h3{
-    font-size: 2.3rem;
+h3 {
+  font-size: 2.3rem;
 }
-
-/* --- Paleta de Colores */
-
-:root{
-    --colorBlanco: rgb(255, 255, 255);
-    --colorNaranja: rgb(255, 165, 0);
-    --colorNaranjaClaro: rgb(235, 181, 82);
-    --colorVerde: rgb(0, 128, 0);
-    --colorVerdeClaro: rgb(11, 194, 11);
-    --colorGrisOscuro: rgb(51, 51, 51);
-    --colorCeleste: rgb(0, 174, 255);
-    --colorGrisClaro: rgb(226, 219, 219);
-}
-
 
 /* --- Reciclar Clases --- */
-
-.contenedor{
-    width: 95%;
-    max-width: 120rem;
-    margin: 0 auto;
+.contenedor {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
 }
 
-.seccion{
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+.seccion {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
-.fw-500{
-    font-weight: 500;
+.fw-500 {
+  font-weight: 500;
 }
 
-
-.centrar-texto{
-    text-align: center;
+.centrar-texto {
+  text-align: center;
 }
 
-.contenido-centrado{
-    max-width: 800px;
+.contenido-centrado {
+  max-width: 800px;
 }
 
 /*Botones*/
-
-.boton{
-    color: var(--colorBlanco);
-    font-weight: 700;
-    text-decoration: none;
-    font-size: 1.8rem;
-    margin-top: 3rem;
-    padding: 1rem 3rem;
-    display: inline-block;
-    text-align: center;
-    border: none;
-    display: block;
-   
+.boton :hover {
+  cursor: pointer;
 }
 
-.boton:hover{
-    cursor: pointer;
+.boton-naranja {
+  background-color: rgb(255, 165, 0);
+}
+.boton-naranja:hover {
+  background-color: rgb(235, 181, 82);
 }
 
-.boton-naranja{
-    background-color: var(--colorNaranja);
+.boton-verde {
+  background-color: rgb(0, 128, 0);
 }
-
-.boton-naranja:hover{
-    background-color: var(--colorNaranjaClaro);
-}
-
-.boton-verde{
-    background-color: var(--colorVerde);
-}
-
-.boton-verde:hover{
-    background-color: var(--colorVerdeClaro);
+.boton-verde:hover {
+  background-color: rgb(11, 194, 11);
 }
 
 /*header*/
-
-
 /*Para header de la pagina de inicio*/
-.inicio{
-    background-image: url(../img/fondo-header.jpg);
-    background-position: center center;
-    background-size: cover;
-    height: 100vh;
-    min-height: 60rem;
+.inicio {
+  background-image: url("../img/fondo-header.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  min-height: 60rem;
 }
 
-.contenido-header{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    text-align: center;
+.contenido-header {
+  height: 100%;
+  flex-direction: column;
 }
-
-.contenido-header h1{
-    color: var(--colorBlanco);
-    padding-bottom: 6rem;
-    font-size: 3.5rem;
-    line-height: 1.5;
+.contenido-header h1 {
+  color: rgb(255, 255, 255);
+  padding-bottom: 6rem;
+  font-size: 3.5rem;
+  line-height: 1.5;
 }
 
 /*Barra de navegacion*/
-
-.logo{
-    width: 12rem;
+.logo {
+  width: 12rem;
 }
 
-.navegacion a:hover{
-    color:var(--colorCeleste)
+.navegacion a:hover {
+  color: rgb(0, 174, 255);
 }
-
 
 /*Iconos seccion sobre nosotros, tanto para index como "nosotros"*/
-
-.icono{
-    text-align: center;
+.icono h3 {
+  text-transform: uppercase;
 }
-
-.icono h3{
-    text-transform: uppercase;
-}
-
-.icono img{
-    height: 15rem;
-}
-
-/*Anuncios de los inmuebles*/
-
-.anuncio{  
-    border: 1px solid var(--colorGrisClaro);
-    background-color: var(--colorBlanco);
-    margin-bottom: 2rem;
-}
-
-.contenido-anuncio{
-    padding: 2rem;
-}
-
-.contenido-anuncio h3{
-    margin: 0;
-    font-size: 2rem;
-}
-
-.contenido-anuncio p{
-    margin: 0;
-    font-size: 1.3rem;
-}
-
-.precio{
-    color: var(--colorVerde);
-    font-weight: 900;
-    font-size: 1.7rem;
-}
-
-.iconos-caracteristicas{
-    margin-top: 1rem;
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-evenly;
-    flex: 1;
-    max-width: 500px;
-}
-
-.iconos-caracteristicas li{
-    display: flex;
-}
-
-.iconos-caracteristicas li img{
-    width: 3.5rem;
-    margin-right: 2rem;
-}
-
-.ver-propiedades{
-    display: block;
-    
-}
-
-/*Seccion "Contactanos" en index*/
-
-.contacto-home{
-    background-image: url(../img/fondo-contacto-home.jpg);
-    background-position: center center;
-    background-size: cover;
-    height: 40rem;
-    display: flex;
-    align-items: center;
-}
-
-.contenido-contacto{
-    flex: 0 0 95%;
-    color: var(--colorBlanco);
-}
-
-.contenido-contacto p{
-    font-size: 1.8rem;
-}
-
-.boton-contacto{
-    display: inline-block;
-    padding: 1rem 2rem;
-    
-}
-
-/*footer*/
-
-.site-footer{
-    background-color: var(--colorGrisOscuro);
-    margin: 0;
-}
-
-.contenedor-footer{
-    padding: 3rem 0;
-
-}
-
-.iconos-footer{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.iconos-footer a img{
-    height: 5rem;
-}
-
-.copyright{
-    margin: 0;
-    color: var(--colorBlanco);
-    text-align: center;
-    font-size: 1.5rem;
-    padding: 1rem;
+.icono img {
+  height: 15rem;
 }
 
 /*Pagina Nosotros*/
-
-.texto-nosotros{
-    padding: 2rem;
-    text-align:justify
+.texto-nosotros {
+  padding: 2rem;
+  text-align: justify;
+}
+.texto-nosotros h3 {
+  text-decoration: underline;
 }
 
-.texto-nosotros h3{
-    text-decoration: underline;
-    text-align: center;
+/*Anuncios de los inmuebles*/
+.anuncio {
+  border: 1px solid rgb(226, 219, 219);
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 2rem;
+}
+
+.contenido-anuncio {
+  padding: 2rem;
+}
+.contenido-anuncio h3 {
+  margin: 0;
+  font-size: 2rem;
+}
+.contenido-anuncio p {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.precio {
+  color: rgb(0, 128, 0);
+  font-weight: 900;
+  font-size: 1.7rem;
+}
+
+.iconos-caracteristicas {
+  margin-top: 1rem;
+  list-style: none;
+  padding: 0;
+  flex: 1;
+  max-width: 500px;
+}
+.iconos-caracteristicas li {
+  display: flex;
+}
+.iconos-caracteristicas li img {
+  width: 3.5rem;
+  margin-right: 2rem;
+}
+
+.ver-propiedades {
+  display: block;
+}
+
+/*Seccion "Contactanos" en index*/
+.contacto-home {
+  background-image: url("../img/fondo-contacto-home.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 40rem;
+}
+
+.contenido-contacto {
+  flex: 0 0 95%;
+  color: rgb(255, 255, 255);
+}
+.contenido-contacto p {
+  font-size: 1.9rem;
+}
+
+.boton-contacto {
+  display: inline-block;
+  padding: 1rem 2rem;
+}
+
+/*footer*/
+.site-footer {
+  background-color: rgb(51, 51, 51);
+  margin: 0;
+}
+
+.contenedor-footer {
+  padding: 3rem 0;
+}
+
+.iconos-footer a img {
+  height: 5rem;
+}
+
+.copyright {
+  margin: 0;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  padding: 1rem;
 }
 
 /*Pagina Propiedad*/
-
-.resumen-propiedad{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 /*Pagina Contacto*/
-
-fieldset{
-    border: 0.1rem solid var(--colorGrisOscuro);
-    padding: 1rem;
-    margin: 1rem 0;
+fieldset {
+  border: 0.1rem solid rgb(51, 51, 51);
+  padding: 1rem;
+  margin: 1rem 0;
 }
 
-legend{
-    font-size: 2.4rem;
-    color: var(--colorGrisOscuro);
+legend {
+  font-size: 2.4rem;
+  color: rgb(51, 51, 51);
 }
 
-label{
-    display: block;
-    padding: 1rem;
+label {
+  display: block;
+  padding: 1rem;
 }
 
-input:not([type="submit"]), textarea{
-    padding: 1rem;
-    display: block;
-    width: 100%;
-    background-color: var(--colorGrisClaro);
-    margin-bottom: 2rem;
-    border: none;
-    border-radius: 1rem;
+input:not([type=submit]), textarea {
+  padding: 1rem;
+  display: block;
+  width: 100%;
+  background-color: rgb(226, 219, 219);
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 1rem;
 }
-
 
 /*media query para desktop*/
-
-@media only screen and (min-width: 800px){
-    /*header*/
-    .contenido-header{
-        text-align: left;
-    }
-
-    /*nosotros*/
-    .iconos-nosotros{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .icono{
-        flex-basis: calc(33.3% - 1rem);
-    }
-
-    .contenido-nosotros{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 2rem;
-    }
-
-    .texto-nosotros h3{
-        margin: 0;
-        padding: 0 0 2rem 0;
-        text-align: start;
-        
-    }
-
-    /*anuncios*/
-    .contenedor-anuncios{
-        display: flex;
-        justify-content: space-between; 
-        flex-wrap: wrap;
-    } 
-
-    .anuncio{
-        flex: 0 0 calc(33.3% - 1rem);
-    }
-
-    .ver-propiedades{
-        display: flex;
-        justify-content: end;
-    }
-
+@media only screen and (min-width: 800px) {
+  /*header*/
+  .contenido-header {
+    text-align: left;
+  }
+  /*nosotros*/
+  .iconos-nosotros {
+    display: flex;
+    justify-content: space-between;
+  }
+  .icono {
+    flex-basis: calc(33.3% - 1rem);
+  }
+  .contenido-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+  }
+  .contenido-nosotros h3 {
+    margin: 0;
+    padding: 0 0 2rem 0;
+    text-align: start;
+  }
+  /*anuncios*/
+  .contenedor-anuncios {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .anuncio {
+    flex: 0 0 calc(33.3% - 1rem);
+  }
+  .ver-propiedades {
+    display: flex;
+    justify-content: end;
+  }
 }
+
+/*# sourceMappingURL=styles.css.map */

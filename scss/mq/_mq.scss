@@ -1,0 +1,47 @@
+/*media query para desktop*/
+
+@media only screen and (min-width: 800px){
+    /*header*/
+    .contenido-header{
+        text-align: left;
+    }
+
+    /*nosotros*/
+    .iconos-nosotros{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .icono{
+        flex-basis: calc(33.3% - 1rem);
+    }
+
+    .contenido-nosotros{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2rem;
+
+        h3{
+            margin: 0;
+            padding: 0 0 2rem 0;
+            text-align: start;
+        }
+    }
+    
+    /*anuncios*/
+    .contenedor-anuncios{
+        display: flex;
+        justify-content: space-between; 
+        flex-wrap: wrap;
+    } 
+
+    .anuncio{
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+
+    .ver-propiedades{
+        display: flex;
+        justify-content: end;
+    }
+
+}
