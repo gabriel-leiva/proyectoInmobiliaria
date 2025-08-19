@@ -10,7 +10,7 @@
 }
 
 .iconos-footer{
-    @extend %evenly-align-items;
+    @include flex(space-evenly, center);
     
     a{
         img{

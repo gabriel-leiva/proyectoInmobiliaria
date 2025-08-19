@@ -8,8 +8,7 @@
 
     /*nosotros*/
     .iconos-nosotros{
-        display: flex;
-        justify-content: space-between;
+        @include flex(space-between);
     }
 
     .icono{
@@ -30,8 +29,7 @@
     
     /*anuncios*/
     .contenedor-anuncios{
-        display: flex;
-        justify-content: space-between; 
+        @include flex(space-between);
         flex-wrap: wrap;
     } 
 
@@ -40,8 +38,7 @@
     }
 
     .ver-propiedades{
-        display: flex;
-        justify-content: end;
+        @include flex(end);
     }
 
 }

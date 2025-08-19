@@ -2,6 +2,16 @@
     font-size: map-get($map: $font_sizes, $key: $key);
 }
 
+@mixin flex($justify-content:null, $align-items:null){
+    display: flex;
+    @if $justify-content != null{
+        justify-content: $justify-content;
+    }
+    @if $align-items != null{
+        align-items: $align-items;
+    }
+}
+
 @mixin boton($bg-color, $hover-color){
     background-color: $bg-color;
 

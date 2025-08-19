@@ -30,12 +30,12 @@
     margin-top: 1rem;
     list-style: none;
     padding: 0;
-    @extend %flex-evenly;
+    @include flex(space-evenly);
     flex: 1;
     max-width: 500px;
 
     li{
-        display: flex;
+        @include flex;
         img{
             width: 3.5rem;
             margin-right: 2rem;

@@ -1,5 +1,4 @@
-/*Pagina Propiedad*/
 
 .resumen-propiedad{
-    @extend %between-align-items;
+    @include flex(space-between, center);
 }

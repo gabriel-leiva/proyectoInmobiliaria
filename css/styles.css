@@ -1,30 +1,3 @@
-.iconos-caracteristicas {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.contenido-header {
-  display: flex;
-  justify-content: end;
-}
-
-.contacto-home {
-  display: flex;
-  align-items: center;
-}
-
-.iconos-footer {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.resumen-propiedad {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .boton {
   font-size: 1.8rem;
   color: rgb(255, 255, 255);
@@ -131,6 +104,8 @@ h3 {
 
 .contenido-header {
   height: 100%;
+  display: flex;
+  justify-content: end;
   flex-direction: column;
 }
 .contenido-header h1 {
@@ -195,6 +170,8 @@ h3 {
   margin-top: 1rem;
   list-style: none;
   padding: 0;
+  display: flex;
+  justify-content: space-evenly;
   flex: 1;
   max-width: 500px;
 }
@@ -216,6 +193,8 @@ h3 {
   background-position: center center;
   background-size: cover;
   height: 40rem;
+  display: flex;
+  align-items: center;
 }
 
 .contenido-contacto {
@@ -241,6 +220,11 @@ h3 {
   padding: 3rem 0;
 }
 
+.iconos-footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 .iconos-footer a img {
   height: 5rem;
 }
@@ -252,7 +236,12 @@ h3 {
   padding: 1rem;
 }
 
-/*Pagina Propiedad*/
+.resumen-propiedad {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /*Pagina Contacto*/
 fieldset {
   border: 0.1rem solid rgb(51, 51, 51);

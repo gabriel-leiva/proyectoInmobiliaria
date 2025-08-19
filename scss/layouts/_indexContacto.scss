@@ -3,7 +3,7 @@
 .contacto-home{
     @include img-cover('../img/fondo-contacto-home.jpg');
     height: 40rem;
-    @extend %flex-align-items;
+    @include flex(null, center);
 }
 
 .contenido-contacto{

@@ -10,7 +10,7 @@
 
 .contenido-header{
     height: 100%;
-    @extend %flex-end;
+    @include flex(end);
     flex-direction: column; 
 
     h1{
