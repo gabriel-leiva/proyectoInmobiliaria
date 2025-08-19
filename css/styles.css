@@ -236,6 +236,7 @@ h3 {
   padding: 1rem;
 }
 
+/*Pagina Propiedad*/
 .resumen-propiedad {
   display: flex;
   justify-content: space-between;
@@ -283,6 +284,12 @@ input:not([type=submit]), textarea {
   .icono {
     flex-basis: calc(33.3% - 1rem);
   }
+  .icono img {
+    transition: transform 0.3s case;
+  }
+  .icono img:hover {
+    transform: scale(1.1);
+  }
   .contenido-nosotros {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -305,6 +312,13 @@ input:not([type=submit]), textarea {
   .ver-propiedades {
     display: flex;
     justify-content: end;
+  }
+  /*footer*/
+  .iconos-footer a img {
+    transition: transform 0.3s case;
+  }
+  .iconos-footer a img:hover {
+    transform: scale(1.1);
   }
 }
 

@@ -29,3 +29,11 @@
 @mixin border($width, $style, $color){
     border: $width $style $color;
 }
+
+@mixin transition-img($property, $duration, $timing-function){
+    transition: $property $duration $timing-function;
+}
+
+@mixin transform-img($scale){
+    transform: scale($scale);
+}

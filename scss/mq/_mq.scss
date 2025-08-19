@@ -13,6 +13,13 @@
 
     .icono{
         flex-basis: calc(33.3% - 1rem);
+        img{
+            @include transition-img(transform, 0.3s, case);
+
+        &:hover{
+            @include transform-img(1.1);
+        }
+        }
     }
 
     .contenido-nosotros{
@@ -39,6 +46,20 @@
 
     .ver-propiedades{
         @include flex(end);
+    }
+
+    /*footer*/
+
+    .iconos-footer{
+        a{
+            img{
+                transition: transform 0.3s case;
+
+            &:hover{
+                transform: scale(1.1);
+        }
+            }
+        }
     }
 
 }
